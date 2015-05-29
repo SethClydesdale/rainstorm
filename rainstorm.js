@@ -1,3 +1,5 @@
+// Rainstorm
+// https://github.com/SethClydesdale/rainstorm
 (function(_) {
   _.rainStorm = {
     autoRain : false, // automatically rain on initiation
