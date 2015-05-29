@@ -172,7 +172,7 @@ These methods can be invoked at anytime.
 2. [rainStorm.stop()](#rainstormstop)
 3. [audio.on()](#audioon)
 4. [audio.off()](#audiooff)
-5. [lightning.flash()](lightningflash)
+5. [lightning.flash()](#lightningflash)
 
 #### rainStorm.start()
 
