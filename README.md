@@ -140,7 +140,7 @@ Lightning settings allow you to harness the power of lightning.
 1. [Enable lightning](#enable-lightning)
 2. [Chances](#chances)
 
-#### Enable lighting
+#### Enable lightning
 
 ``enabled`` allows you to enable or disable the lightning flashes.
 
