@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+
+  <head>
+    <title>rainStorm ☂</title>
+    <meta charset="UTF-8" />
+    <meta name="language" content="en"/>
+    <meta name="keywords" content="Rain, Thunder, Storm, JavaScript"/>
+    <meta name="description" content="Enjoy the sound of rain directly in your browser."/>
+    <meta name="author" content="Seth Clydesdale"/>
+    <link rel="stylesheet" href="style.css" />
+    <script src="rainstorm.js"></script>
+  </head>
+  
+  <body>
+    <script>rainStorm.start(); // start rain storm</script>
+    
+    <input id="tools" type="button" value="Settings" />
+    <div id="toolist" style="display:none;">
+      <div class="title">Rain Settings</div>
+      <p class="text">These settings allow you to change the spawn rate, falling rate, and total amount of drops allowed in the DOM. You can also modify the image of the droplets, and toggle the rain.</p>
+      <div class="row"><span>rainRate : </span><input type="text" value="300" id="rainRate" /></div>
+      <div class="row"><span>fallRate : </span><input type="text" value="50" id="fallRate" /></div>
+      <div class="row"><span>maxDrops : </span><input type="text" value="30" id="maxDrops" /></div>
+      <div class="row"><span>image : </span><input type="text" value="graphics/droplet-0.png" id="image" /></div>
+      <div class="row" style="text-align:center;"><input type="button" value="Toggle rain" onclick="rainStorm.raining ? rainStorm.stop() : rainStorm.start();" /> <input id="save" type="button" value="Save settings" /></div>
+      <div class="title">For developers</div>
+      <p class="text"><strong>Developers</strong> can access the rainStorm object via their console by typing and entering <em>rainStorm</em> to examine and manipulate additional properties.</p>
+    </div>
+    
+    
+    <script>
+    (function() {
+      document.getElementById('tools').onclick = function() {
+        var list = document.getElementById('toolist');
+        /none/.test(list.style.display) ? list.style.display = 'block' : list.style.display = 'none';
+      };
+      
+      document.getElementById('save').onclick = function() {
+        rainStorm.rainRate = document.getElementById('rainRate').value || 300;
+        rainStorm.fallRate = document.getElementById('fallRate').value || 50;
+        rainStorm.maxDrops = document.getElementById('maxDrops').value || 30;
+        rainStorm.image = document.getElementById('image').value || '';
+        rainStorm.stop();
+        rainStorm.start();
+      };
+    })();
+    </script>
+  </body>
+
+</head>
