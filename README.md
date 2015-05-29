@@ -137,8 +137,8 @@ rainStorm.audio.wav = 'audio/rain.wav'; // link to your wav file
 
 Lightning settings allow you to harness the power of lightning.
 
-1. [Enable lightning](enable-lightning)
-2. [Chances](chances)
+1. [Enable lightning](#enable-lightning)
+2. [Chances](#chances)
 
 #### Enable lighting
 
