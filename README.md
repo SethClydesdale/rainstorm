@@ -202,7 +202,7 @@ rainStorm.audio.on(); // play storm audio
 rainStorm.audio.off(); // pause storm audio
 ```
 
-#### lighting.flash()
+#### lightning.flash()
 
 ``flash`` allows you to generate a flash of lightning.
 ```javascript
