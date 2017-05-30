@@ -1,9 +1,7 @@
 # Rainstorm
 Rainstorm is, you guessed it, another script to rain images and elements in the browser window. Now, get your unbrellas ! Rainstorm is a flexible object, allowing you to change the settings mid-rain via the console or a panel you created. To make the rain feel even more immersive, audio and lightning flash settings are also included.
 
-You can find a live example on MDN.
-
-https://developer.mozilla.org/en-US/demos/detail/rainstorm
+You can find a live example @ https://sethclydesdale.github.io/rainstorm/
 
 ## Getting started
 
